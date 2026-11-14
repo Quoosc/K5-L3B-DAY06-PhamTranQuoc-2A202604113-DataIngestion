@@ -1,0 +1,90 @@
+{
+  "created_at": "2026-11-13T10:05:06.869501+00:00",
+  "model_load_seconds": 25.114249699996435,
+  "strategies": {
+    "A": {
+      "chunks": 162,
+      "tokens_total": 46090,
+      "chars_total": 171632,
+      "token_min": 49,
+      "token_max": 320,
+      "token_mean": 284.5061728395062,
+      "token_p50": 320.0,
+      "token_p95": 320.0,
+      "chunk_seconds": 0.3565305000083754,
+      "embedding_seconds": 11.56479250000848,
+      "store_seconds": 1.1741723000013735,
+      "embedding_cache": "cold",
+      "embedding_cache_key": "a05cb9efe5627817025daaa0ad87343e86d63c36dfaf1705d3cfc813f765a3cd",
+      "chunk_sha256": "8b48a4d534708bf0e75bdcbff7f8190b8d44bab4326a08e597ce15a4e7c9cedc",
+      "sync": {
+        "collection": "lab6_A",
+        "before": 0,
+        "after": 162,
+        "inserted": 162,
+        "updated": 0,
+        "deleted": 0,
+        "input_chunks": 162
+      },
+      "api_cost_usd": 0,
+      "cost_note": "local inference; hardware/electricity not monetized"
+    },
+    "B": {
+      "chunks": 156,
+      "tokens_total": 40218,
+      "chars_total": 149480,
+      "token_min": 31,
+      "token_max": 320,
+      "token_mean": 257.8076923076923,
+      "token_p50": 284.0,
+      "token_p95": 319.0,
+      "chunk_seconds": 0.4155209000018658,
+      "embedding_seconds": 10.632507600006647,
+      "store_seconds": 1.0764536000060616,
+      "embedding_cache": "cold",
+      "embedding_cache_key": "a4c797477355eb095cdd24cac0bc5b7196befb29ce8c10ae8edefbe891197c9c",
+      "chunk_sha256": "3ce64360d719144d787cd3704d578b6edc340c6ab8f1a505589384b45d1d5d1c",
+      "sync": {
+        "collection": "lab6_B",
+        "before": 0,
+        "after": 156,
+        "inserted": 156,
+        "updated": 0,
+        "deleted": 0,
+        "input_chunks": 156
+      },
+      "api_cost_usd": 0,
+      "cost_note": "local inference; hardware/electricity not monetized"
+    },
+    "C": {
+      "chunks": 156,
+      "tokens_total": 40218,
+      "chars_total": 149480,
+      "token_min": 31,
+      "token_max": 320,
+      "token_mean": 257.8076923076923,
+      "token_p50": 284.0,
+      "token_p95": 319.0,
+      "chunk_seconds": 0.4155209000018658,
+      "embedding_seconds": 10.632507600006647,
+      "store_seconds": 1.0764536000060616,
+      "embedding_cache": "cold",
+      "embedding_cache_key": "a4c797477355eb095cdd24cac0bc5b7196befb29ce8c10ae8edefbe891197c9c",
+      "chunk_sha256": "3ce64360d719144d787cd3704d578b6edc340c6ab8f1a505589384b45d1d5d1c",
+      "sync": {
+        "collection": "lab6_B",
+        "before": 0,
+        "after": 156,
+        "inserted": 156,
+        "updated": 0,
+        "deleted": 0,
+        "input_chunks": 156
+      },
+      "api_cost_usd": 0,
+      "cost_note": "local inference; hardware/electricity not monetized",
+      "reuses": "B",
+      "additional_index_seconds": 0,
+      "note": "same B collection/chunks/vectors; B build cost applies, filter is only intervention"
+    }
+  }
+}

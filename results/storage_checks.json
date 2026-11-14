@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-11-13T10:05:06.868495+00:00",
+  "first_count": 2,
+  "repeat_count": 2,
+  "after_update_count": 1,
+  "updated_ids": [
+    "eedda894c2ff157f1fc36f26a84ad121737b7405190867e7f3c3000f8c7e5541_changed"
+  ],
+  "after_removal_count": 0,
+  "before_reopen": {
+    "A": 162,
+    "B": 156
+  },
+  "after_reopen": {
+    "A": 162,
+    "B": 156
+  },
+  "pass": true,
+  "note": "dedicated probe collection using real embedding vectors; not included in benchmark"
+}

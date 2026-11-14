@@ -1,0 +1,32 @@
+[
+  {
+    "strategy": "A",
+    "split": "dev",
+    "n": 20,
+    "hit1_n": 14,
+    "hit3_n": 17,
+    "hit1": 0.7,
+    "hit3": 0.85,
+    "returned_chunks": 60
+  },
+  {
+    "strategy": "B",
+    "split": "dev",
+    "n": 20,
+    "hit1_n": 17,
+    "hit3_n": 18,
+    "hit1": 0.85,
+    "hit3": 0.9,
+    "returned_chunks": 60
+  },
+  {
+    "strategy": "C",
+    "split": "dev",
+    "n": 20,
+    "hit1_n": 17,
+    "hit3_n": 18,
+    "hit1": 0.85,
+    "hit3": 0.9,
+    "returned_chunks": 60
+  }
+]

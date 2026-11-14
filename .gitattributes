@@ -1,0 +1,7 @@
+# Preserve the exact bytes covered by corpus, benchmark, and run checksums.
+data/** -text
+benchmark/** -text
+src/** -text
+artifacts/** -text
+configs/** -text
+results/** -text

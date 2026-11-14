@@ -1,0 +1,18 @@
+{
+  "completed_at": "2026-11-13T10:05:33.991809+00:00",
+  "fingerprints": {
+    "configs/strategies.json": "a6f4df105ec7378512d1056c605fa693191661a1da9b1b70ca31b13079ca5573",
+    "benchmark/questions.jsonl": "6de072acd33bebc7712021d5d95a48568d7995301d8905819597ed5d6d8105f7",
+    "benchmark/protocol.md": "a8c2b6e4439a1c9d7ea45401708d164c4be9b912573791de12a473deb587d4f4",
+    "benchmark/coherence_positions.json": "919bacec7ca0fc925a91564ad729f449bef23629ef3e24c3c71f507e86e1a885",
+    "data/normalized/pages.jsonl": "00ed526c1de45d2d96c957ce0105a074d53ccad50d12402a4db49e9773e5fbea",
+    "src/run.py": "8675bf5fe290851ad2b01797de2aa8d5efd7a9c87ad96941aae6af5508baaf79",
+    "src/evaluation.py": "91293f883d7ce627a9996fd316f19baff7c15a2cd1aa30660e9a5516017f827d",
+    "src/chunking.py": "ab20c91e86f97e3df978cb866d537f0720c9349db805e5860ae48039c0e07987",
+    "src/embeddings.py": "f3039fd1b0b50b294dd74c01b1a9ffbf858a8d255a3b95ed4379d3be466f461e",
+    "src/store.py": "619c4442ed4bda8b53b8bf58af89d4edc7c02fe2653fff8b09082825a90f19a7",
+    "src/ingestion.py": "24008dc476f9f51feaef67515203df59e792c89b836057c25209e49c967fdba4"
+  },
+  "trace_sha256": "869848d3bce726d28c420c9ee56ede6431c4422b19f1b7329279d42affde2acf",
+  "metrics_sha256": "50cd2fe2c628ead988f2b54c5d9d3047e45f7dc9da4aa726d2690302968499cb"
+}

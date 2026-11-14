@@ -1,0 +1,82 @@
+{
+  "Doc/tutorial/inputoutput.rst": {
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/inputoutput.rst",
+    "path": "data/raw/tutorial-inputoutput.rst",
+    "accessed_at": "2026-11-13T09:28:52.228890+00:00",
+    "sha256": "210f867a77f007c622ca3b268c0962fb49550adec8bedea5f7bb2926a6443795",
+    "bytes": 20798,
+    "snapshot": "v3.12.10"
+  },
+  "Doc/tutorial/errors.rst": {
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/errors.rst",
+    "path": "data/raw/tutorial-errors.rst",
+    "accessed_at": "2026-11-13T09:28:52.228890+00:00",
+    "sha256": "5abcceab4358053665c35497a23772773718a54325af861bb0640a9efba00f7e",
+    "bytes": 23111,
+    "snapshot": "v3.12.10"
+  },
+  "Doc/tutorial/datastructures.rst": {
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/datastructures.rst",
+    "path": "data/raw/tutorial-datastructures.rst",
+    "accessed_at": "2026-11-13T09:28:52.231998+00:00",
+    "sha256": "c83633cfaa116c223eb4eacaf454f444591257f5340bae4f741726335029cf48",
+    "bytes": 24809,
+    "snapshot": "v3.12.10"
+  },
+  "Doc/library/json.rst": {
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+    "path": "data/raw/library-json.rst",
+    "accessed_at": "2026-11-13T09:28:53.040937+00:00",
+    "sha256": "939f692d13cad1c22417edb8704664991f73dfa064f1eec5f59532de99fa93ef",
+    "bytes": 29859,
+    "snapshot": "v3.12.10"
+  },
+  "Doc/library/pathlib.rst": {
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/pathlib.rst",
+    "path": "data/raw/library-pathlib.rst",
+    "accessed_at": "2026-11-13T09:28:53.690462+00:00",
+    "sha256": "1c4ba9aabc2e36321dcfdc3b86daebace41aa39969eaedb449e4a385d6011af1",
+    "bytes": 51821,
+    "snapshot": "v3.12.10"
+  },
+  "Doc/library/io.rst": {
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/io.rst",
+    "path": "data/raw/library-io.rst",
+    "accessed_at": "2026-11-13T09:29:02.968034+00:00",
+    "sha256": "6f9739389fe7d1499472a892fc6ba25a1c96a5d980e03437f8b29a37dabef9a1",
+    "bytes": 46656,
+    "snapshot": "v3.12.10"
+  },
+  "Doc/library/stdtypes.rst": {
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/stdtypes.rst",
+    "path": "data/raw/library-stdtypes.rst",
+    "accessed_at": "2026-11-13T09:29:02.106554+00:00",
+    "sha256": "3c61e89ca96738cba12cd45632b2728e4fcb3637c340996f59f97fa4eb8614b0",
+    "bytes": 215324,
+    "snapshot": "v3.12.10"
+  },
+  "Doc/library/exceptions.rst": {
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/exceptions.rst",
+    "path": "data/raw/library-exceptions.rst",
+    "accessed_at": "2026-11-13T09:28:57.002769+00:00",
+    "sha256": "e4de03f241f7e0f8ae22780e17b17eb1a553de9b827769be4fb8c40c0ad9ac1c",
+    "bytes": 38059,
+    "snapshot": "v3.12.10"
+  },
+  "LICENSE": {
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/LICENSE",
+    "path": "data/licenses/CPYTHON_LICENSE.txt",
+    "accessed_at": "2026-11-13T09:28:56.680366+00:00",
+    "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+    "bytes": 13936,
+    "snapshot": "v3.12.10"
+  },
+  "Doc/license.rst": {
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/license.rst",
+    "path": "data/licenses/CPYTHON_DOCUMENTATION_LICENSE.rst",
+    "accessed_at": "2026-11-13T09:28:57.694124+00:00",
+    "sha256": "341832873fd316a37927e79385093fbbfd40a467428480835fe435a80cadf4e5",
+    "bytes": 54130,
+    "snapshot": "v3.12.10"
+  }
+}

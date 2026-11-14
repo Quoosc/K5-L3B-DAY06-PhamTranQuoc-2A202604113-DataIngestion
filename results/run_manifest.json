@@ -1,0 +1,80 @@
+{
+  "created_at": "2026-11-13T10:05:06.880024+00:00",
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "versions": {
+    "torch": "2.15.0+cpu",
+    "sentence-transformers": "5.7.0",
+    "transformers": "5.22.2",
+    "qdrant-client": "1.20.0",
+    "numpy": "2.5.4",
+    "tokenizers": "0.23.3",
+    "huggingface-hub": "2.4.0"
+  },
+  "model": {
+    "provider": "local_sentence_transformers",
+    "model_name": "intfloat/multilingual-e5-small",
+    "requested_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "resolved_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "model_path": "E:\\VINAITHUCCHIEN\\K5-L3B-DAY06-2A202604113-DataIngestion\\.local\\model-snapshot",
+    "dimensions": 384,
+    "device": "cpu",
+    "batch_size": 16,
+    "normalize_embeddings": true,
+    "document_prefix": "passage: ",
+    "query_prefix": "query: ",
+    "max_input_tokens": 512,
+    "sentence_transformers_version": "5.7.0",
+    "transformers_version": "5.22.2",
+    "torch_version": "2.15.0+cpu",
+    "api_cost_usd": 0.0,
+    "measured_dimensions": 384
+  },
+  "config": {
+    "model": "intfloat/multilingual-e5-small",
+    "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "device": "cpu",
+    "batch_size": 16,
+    "metric": "cosine",
+    "top_k": 3,
+    "strategies": {
+      "A": {
+        "chunking": "fixed",
+        "max_tokens": 320,
+        "overlap": 48,
+        "filter": false
+      },
+      "B": {
+        "chunking": "paragraph",
+        "max_tokens": 320,
+        "overlap": 0,
+        "filter": false
+      },
+      "C": {
+        "reuse": "B",
+        "filter": true
+      }
+    }
+  },
+  "fingerprints": {
+    "configs/strategies.json": "a6f4df105ec7378512d1056c605fa693191661a1da9b1b70ca31b13079ca5573",
+    "benchmark/questions.jsonl": "6de072acd33bebc7712021d5d95a48568d7995301d8905819597ed5d6d8105f7",
+    "benchmark/protocol.md": "a8c2b6e4439a1c9d7ea45401708d164c4be9b912573791de12a473deb587d4f4",
+    "benchmark/coherence_positions.json": "919bacec7ca0fc925a91564ad729f449bef23629ef3e24c3c71f507e86e1a885",
+    "data/normalized/pages.jsonl": "00ed526c1de45d2d96c957ce0105a074d53ccad50d12402a4db49e9773e5fbea",
+    "src/run.py": "8675bf5fe290851ad2b01797de2aa8d5efd7a9c87ad96941aae6af5508baaf79",
+    "src/evaluation.py": "91293f883d7ce627a9996fd316f19baff7c15a2cd1aa30660e9a5516017f827d",
+    "src/chunking.py": "ab20c91e86f97e3df978cb866d537f0720c9349db805e5860ae48039c0e07987",
+    "src/embeddings.py": "f3039fd1b0b50b294dd74c01b1a9ffbf858a8d255a3b95ed4379d3be466f461e",
+    "src/store.py": "619c4442ed4bda8b53b8bf58af89d4edc7c02fe2653fff8b09082825a90f19a7",
+    "src/ingestion.py": "24008dc476f9f51feaef67515203df59e792c89b836057c25209e49c967fdba4"
+  },
+  "vector_store": {
+    "backend": "Qdrant local persistent",
+    "path": ".local\\qdrant",
+    "metric": "cosine"
+  },
+  "api_cost_usd": 0,
+  "random_seed": 42,
+  "note": "No API generation; deterministic fixed corpus and explicit strategies."
+}

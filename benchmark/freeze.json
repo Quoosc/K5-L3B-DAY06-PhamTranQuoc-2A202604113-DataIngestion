@@ -1,0 +1,13 @@
+{
+  "frozen_at_utc": "2026-11-13T09:39:49.863186+00:00",
+  "status": "pre-retrieval benchmark design freeze",
+  "corpus_sha256": "00ed526c1de45d2d96c957ce0105a074d53ccad50d12402a4db49e9773e5fbea",
+  "files": {
+    "questions.jsonl": "6de072acd33bebc7712021d5d95a48568d7995301d8905819597ed5d6d8105f7",
+    "protocol.md": "a8c2b6e4439a1c9d7ea45401708d164c4be9b912573791de12a473deb587d4f4",
+    "coherence_positions.json": "919bacec7ca0fc925a91564ad729f449bef23629ef3e24c3c71f507e86e1a885",
+    "evidence_validation.json": "ef56d79bb09f50e9d3055ff33e72de8837401f8ac423993bf66c0374b46bdc70"
+  },
+  "retrieval_results_seen_by_author": false,
+  "note": "Re-running this design builder after retrieval would not establish a new independent holdout. Preserve this initial freeze record."
+}

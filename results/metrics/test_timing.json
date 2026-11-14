@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-11-13T10:06:17.595223+00:00",
+  "query_embedding_total": 0.16443179997440893,
+  "search": {
+    "A": {
+      "total_seconds": 0.032114300003740937,
+      "p50_seconds": 0.00282244999834802,
+      "p95_seconds": 0.004973524995148178
+    },
+    "B": {
+      "total_seconds": 0.028327899985015392,
+      "p50_seconds": 0.0026839000056497753,
+      "p95_seconds": 0.0035266049962956454
+    },
+    "C": {
+      "total_seconds": 0.03284389997133985,
+      "p50_seconds": 0.002620249993924517,
+      "p95_seconds": 0.006180454995774198
+    }
+  },
+  "note": "single sequential run; query embeddings reused; timings hardware/cache dependent"
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "coh01",
+    "document_id": "library-exceptions",
+    "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/exceptions.rst",
+    "page": 1,
+    "offset": 1905,
+    "page_offset": 1905,
+    "source_offset": 1905,
+    "anchor_text": "When raising a new exception while another exception\n   is already being handled, the new exception's\n   !__context__ attribute is automatically set to the hand",
+    "selection_rule": "Sorted document round-robin units; start of middle eligible prose paragraph (>=80 chars, no prompts/index fields)"
+  },
+  {
+    "id": "coh02",
+    "document_id": "library-io",
+    "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/io.rst",
+    "page": 1,
+    "offset": 2243,
+    "page_offset": 2243,
+    "source_offset": 2243,
+    "anchor_text": "Binary I/O (also called *buffered I/O*) expects bytes-like objects and produces bytes objects.  No encoding, decoding, or newline translation is performed.  Thi",
+    "selection_rule": "Sorted document round-robin units; start of middle eligible prose paragraph (>=80 chars, no prompts/index fields)"
+  },
+  {
+    "id": "coh03",
+    "document_id": "library-json",
+    "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+    "page": 1,
+    "offset": 850,
+    "page_offset": 850,
+    "source_offset": 850,
+    "anchor_text": "json exposes an API familiar to users of the standard library marshal and pickle modules.",
+    "selection_rule": "Sorted document round-robin units; start of middle eligible prose paragraph (>=80 chars, no prompts/index fields)"
+  },
+  {
+    "id": "coh04",
+    "document_id": "library-pathlib",
+    "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/pathlib.rst",
+    "page": 1,
+    "offset": 2705,
+    "page_offset": 2705,
+    "source_offset": 2705,
+    "anchor_text": "Pure path objects provide path-handling operations which don't actually access a filesystem.  There are three ways to access these classes, which we also call *",
+    "selection_rule": "Sorted document round-robin units; start of middle eligible prose paragraph (>=80 chars, no prompts/index fields)"
+  },
+  {
+    "id": "coh05",
+    "document_id": "library-stdtypes",
+    "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/stdtypes.rst",
+    "page": 1,
+    "offset": 995,
+    "page_offset": 995,
+    "source_offset": 995,
+    "anchor_text": "By default, an object is considered true unless its class defines either a object.__bool__ method that returns False or a object.__len__ method that returns zer",
+    "selection_rule": "Sorted document round-robin units; start of middle eligible prose paragraph (>=80 chars, no prompts/index fields)"
+  },
+  {
+    "id": "coh06",
+    "document_id": "tutorial-datastructures",
+    "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/datastructures.rst",
+    "page": 1,
+    "offset": 1351,
+    "page_offset": 1351,
+    "source_offset": 1351,
+    "anchor_text": "Return zero-based index in the list of the first item whose value is equal to *x*.\n   Raises a ValueError if there is no such item.",
+    "selection_rule": "Sorted document round-robin units; start of middle eligible prose paragraph (>=80 chars, no prompts/index fields)"
+  },
+  {
+    "id": "coh07",
+    "document_id": "tutorial-errors",
+    "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/errors.rst",
+    "page": 1,
+    "offset": 2285,
+    "page_offset": 2285,
+    "source_offset": 2285,
+    "anchor_text": "The rest of the line provides detail based on the type of exception and what caused it.",
+    "selection_rule": "Sorted document round-robin units; start of middle eligible prose paragraph (>=80 chars, no prompts/index fields)"
+  },
+  {
+    "id": "coh08",
+    "document_id": "tutorial-inputoutput",
+    "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/inputoutput.rst",
+    "page": 1,
+    "offset": 1636,
+    "page_offset": 1636,
+    "source_offset": 1636,
+    "anchor_text": "Notice how the yes_votes are padded with spaces and a negative sign only for negative numbers.\n  The example also prints percentage multiplied by 100, with 2 de",
+    "selection_rule": "Sorted document round-robin units; start of middle eligible prose paragraph (>=80 chars, no prompts/index fields)"
+  },
+  {
+    "id": "coh09",
+    "document_id": "library-exceptions",
+    "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/exceptions.rst",
+    "page": 2,
+    "offset": 2201,
+    "page_offset": 2201,
+    "source_offset": 5835,
+    "anchor_text": "Add the string note to the exception's notes which appear in the standard\n      traceback after the exception string. A TypeError is raised if note\n      is not",
+    "selection_rule": "Sorted document round-robin units; start of middle eligible prose paragraph (>=80 chars, no prompts/index fields)"
+  },
+  {
+    "id": "coh10",
+    "document_id": "library-io",
+    "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/io.rst",
+    "page": 2,
+    "offset": 1850,
+    "page_offset": 1850,
+    "source_offset": 5642,
+    "anchor_text": "Opens the provided file with mode 'rb'. This function should be used\n   when the intent is to treat the contents as executable code.",
+    "selection_rule": "Sorted document round-robin units; start of middle eligible prose paragraph (>=80 chars, no prompts/index fields)"
+  }
+]

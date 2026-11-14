@@ -1,0 +1,13 @@
+{
+  "model": "intfloat/multilingual-e5-small",
+  "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "device": "cpu",
+  "batch_size": 16,
+  "metric": "cosine",
+  "top_k": 3,
+  "strategies": {
+    "A": {"chunking": "fixed", "max_tokens": 320, "overlap": 48, "filter": false},
+    "B": {"chunking": "paragraph", "max_tokens": 320, "overlap": 0, "filter": false},
+    "C": {"reuse": "B", "filter": true}
+  }
+}

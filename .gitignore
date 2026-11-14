@@ -1,0 +1,12 @@
+.venv/
+.local/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+.env.*
+!.env.example
+.DS_Store
+results/reproduction/
+/data/normalized/sources/
+/results/input_validation.json

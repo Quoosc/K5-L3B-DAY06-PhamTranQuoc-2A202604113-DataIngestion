@@ -1,0 +1,208 @@
+{
+  "reviewer": "Phạm Trấn Quốc",
+  "reviewed_at": "2026-11-13T19:38:30+07:00",
+  "human_reviewed": true,
+  "question_count": 30,
+  "split_counts": {
+    "dev": 20,
+    "test": 10
+  },
+  "scope": "Question wording, expected answers, gold source/page, evidence quotes, alternatives and filter contexts.",
+  "source": "benchmark/questions.jsonl",
+  "freeze_preserved": true,
+  "note": "Hồ sơ này ghi trạng thái xác nhận hiện tại của Phạm Trấn Quốc. Các cờ human_reviewed=false hoặc human review pending trong questions.jsonl và evidence_validation.json là trạng thái lịch sử trước thí nghiệm; không phải việc đang chờ học viên làm. Giữ nguyên hai file đã khóa để đối chiếu checksum và thời điểm thí nghiệm.",
+  "source_sha256": "6de072acd33bebc7712021d5d95a48568d7995301d8905819597ed5d6d8105f7",
+  "audit_counts": {
+    "coherence": 30,
+    "grounding": 30,
+    "metadata": 90
+  },
+  "audit_sources": {
+    "coherence": "results/audits/coherence_labels.json",
+    "grounding": "results/audits/grounding_labels.json",
+    "metadata": "results/audits/metadata_checks.csv"
+  },
+  "human_review_reason": "Đã đọc và xác nhận toàn bộ câu hỏi/gold cùng 150 mục audit. Các lý do đánh giá chi tiết được giữ tại từng mẫu; trạng thái hiện tại là đã hoàn tất xác nhận.",
+  "frozen_snapshots": {
+    "questions.jsonl": {
+      "sha256": "6de072acd33bebc7712021d5d95a48568d7995301d8905819597ed5d6d8105f7",
+      "status": "historical_pre_retrieval_snapshot",
+      "current_confirmation": "benchmark/human_review.json"
+    },
+    "protocol.md": {
+      "sha256": "a8c2b6e4439a1c9d7ea45401708d164c4be9b912573791de12a473deb587d4f4",
+      "status": "historical_pre_retrieval_snapshot",
+      "current_confirmation": "benchmark/human_review.json"
+    },
+    "coherence_positions.json": {
+      "sha256": "919bacec7ca0fc925a91564ad729f449bef23629ef3e24c3c71f507e86e1a885",
+      "status": "historical_pre_retrieval_snapshot",
+      "current_confirmation": "benchmark/human_review.json"
+    },
+    "evidence_validation.json": {
+      "sha256": "ef56d79bb09f50e9d3055ff33e72de8837401f8ac423993bf66c0374b46bdc70",
+      "status": "historical_pre_retrieval_snapshot",
+      "current_confirmation": "benchmark/human_review.json"
+    }
+  },
+  "post_experiment_adjudication": {
+    "reviewer": "Codex AI",
+    "reviewed_at": "2026-11-13T13:28:35.762279+00:00",
+    "method": "AI-assisted semantic review authorized by the author; read the question, expected answer, source and each retrieved chunk; accept complete equivalent evidence in ONE chunk. Exact source spans and all derived metrics are independently recomputed by verify_artifacts.py.",
+    "input_sha256": {
+      "benchmark/questions.jsonl": "6de072acd33bebc7712021d5d95a48568d7995301d8905819597ed5d6d8105f7",
+      "results/traces/dev.jsonl": "869848d3bce726d28c420c9ee56ede6431c4422b19f1b7329279d42affde2acf",
+      "results/traces/test.jsonl": "c2fc44a9447d72ccaa341bcadfbce02eb49c79e29576fa691282766459af2b87"
+    },
+    "decisions": [
+      {
+        "question_id": "q28",
+        "split": "dev",
+        "reason": "Cả đoạn BaseException và đoạn Exception nêu trực tiếp rằng ngoại lệ do người dùng định nghĩa nên kế thừa Exception. Hai đoạn đủ trả lời câu hỏi, nhưng đoạn thứ nhất chưa nằm trong gold, còn đoạn thứ hai bị cắt một phần tiền tố tiêu đề trong chunk A hạng 3. Tên lớp và khuyến nghị đầy đủ vẫn còn; chấp nhận bằng chứng tương đương theo GUIDE §4.",
+        "accepted_evidence": [
+          {
+            "source_id": "library-exceptions",
+            "page": 2,
+            "evidence_quote": "Exception: BaseException\n\n   The base class for all built-in exceptions.  It is not meant to be directly\n   inherited by user-defined classes (for that, use Exception).",
+            "page_offset": 569,
+            "source_offset": 4203,
+            "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/exceptions.rst"
+          },
+          {
+            "source_id": "library-exceptions",
+            "page": 2,
+            "evidence_quote": "Exception\n\n   All built-in, non-system-exiting exceptions are derived from this class.  All\n   user-defined exceptions should also be derived from this class.",
+            "page_offset": 2598,
+            "source_offset": 6232,
+            "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/exceptions.rst"
+          }
+        ]
+      }
+    ],
+    "metrics": {
+      "dev": [
+        {
+          "strategy": "A",
+          "split": "dev",
+          "n": 20,
+          "hit1_n": 15,
+          "hit3_n": 18,
+          "hit1": 0.75,
+          "hit3": 0.9,
+          "returned_chunks": 60
+        },
+        {
+          "strategy": "B",
+          "split": "dev",
+          "n": 20,
+          "hit1_n": 18,
+          "hit3_n": 19,
+          "hit1": 0.9,
+          "hit3": 0.95,
+          "returned_chunks": 60
+        },
+        {
+          "strategy": "C",
+          "split": "dev",
+          "n": 20,
+          "hit1_n": 18,
+          "hit3_n": 19,
+          "hit1": 0.9,
+          "hit3": 0.95,
+          "returned_chunks": 60
+        }
+      ],
+      "test": [
+        {
+          "strategy": "A",
+          "split": "test",
+          "n": 10,
+          "hit1_n": 3,
+          "hit3_n": 6,
+          "hit1": 0.3,
+          "hit3": 0.6,
+          "returned_chunks": 30
+        },
+        {
+          "strategy": "B",
+          "split": "test",
+          "n": 10,
+          "hit1_n": 3,
+          "hit3_n": 5,
+          "hit1": 0.3,
+          "hit3": 0.5,
+          "returned_chunks": 30
+        },
+        {
+          "strategy": "C",
+          "split": "test",
+          "n": 10,
+          "hit1_n": 3,
+          "hit3_n": 5,
+          "hit1": 0.3,
+          "hit3": 0.5,
+          "returned_chunks": 30
+        }
+      ]
+    },
+    "changes": [
+      {
+        "question_id": "q28",
+        "strategy": "A",
+        "split": "dev",
+        "original_hit1": false,
+        "original_hit3": false,
+        "reviewed_hit1": true,
+        "reviewed_hit3": true,
+        "accepted_ranks": [
+          1,
+          3
+        ]
+      },
+      {
+        "question_id": "q28",
+        "strategy": "B",
+        "split": "dev",
+        "original_hit1": false,
+        "original_hit3": false,
+        "reviewed_hit1": true,
+        "reviewed_hit3": true,
+        "accepted_ranks": [
+          1
+        ]
+      },
+      {
+        "question_id": "q28",
+        "strategy": "C",
+        "split": "dev",
+        "original_hit1": false,
+        "original_hit3": false,
+        "reviewed_hit1": true,
+        "reviewed_hit3": true,
+        "accepted_ranks": [
+          1
+        ]
+      }
+    ],
+    "selected_strategy": "B",
+    "original_selection_preserved": true,
+    "scope_note": "Đính chính cách chấm sau thí nghiệm cho q28 trên dev; không đổi câu hỏi, cấu hình, thứ hạng, trace gốc, test hoặc lựa chọn B trước test. Bảng gốc là phép khớp trọn quote; bảng reviewed bổ sung bằng chứng tương đương. Không nhận đây là một lần holdout mới hoặc một lần chấm thủ công mới của học viên.",
+    "borderline_cases": [
+      {
+        "question_id": "q27",
+        "strategy": "A",
+        "decision": "unchanged",
+        "reason": "Top-1 giữ ý ẩn hiển thị và bảo toàn __context__, nhưng thiếu câu gán __cause__ trong đáp án đã khóa. Ghép top-1 và top-2 có thể đủ; không thay metric một chunk bằng hợp nhiều chunk."
+      },
+      {
+        "question_id": "q26",
+        "strategies": [
+          "B",
+          "C"
+        ],
+        "decision": "unchanged",
+        "reason": "Đoạn mã bit_length cho bằng chứng một phần, nhưng thiếu công thức bất đẳng thức và phát biểu riêng cho số 0 trong đáp án đã khóa. Giữ nhãn grounding 1 và không nâng điểm test bằng một cách diễn giải rộng hơn sau khi xem kết quả."
+      }
+    ]
+  }
+}

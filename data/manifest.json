@@ -1,0 +1,1096 @@
+{
+  "corpus_id": "cpython-3.12.10-docs-first-five-units-v1",
+  "source_repository": "https://github.com/python/cpython",
+  "snapshot": "v3.12.10",
+  "counting_rule": "sequential normalized RST text slices, >=1500 characters, exact [start_offset,end_offset); not physical PDF pages",
+  "selection_rule": "first five sequential eligible units from each of eight fixed documents, chosen before retrieval/benchmark",
+  "normalization": "NFC; LF; normalized whitespace preserving paragraphs/code; conservative RST role/directive cleanup; no OCR",
+  "source_unit_target_chars": 3600,
+  "source_unit_min_chars": 1500,
+  "selected_unit_count": 40,
+  "total_selected_characters": 150147,
+  "normalized_pages_path": "data/normalized/pages.jsonl",
+  "pages_sha256": "00ed526c1de45d2d96c957ce0105a074d53ccad50d12402a4db49e9773e5fbea",
+  "sources": [
+    {
+      "source_id": "tutorial-inputoutput",
+      "document_id": "tutorial-inputoutput",
+      "title": "Input and Output",
+      "source_path_or_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/inputoutput.rst",
+      "snapshot": "v3.12.10",
+      "license_or_permission": "Python Software Foundation License Version 2; retain upstream notices; code examples additionally have documentation license terms",
+      "license_files": [
+        "data/licenses/CPYTHON_LICENSE.txt",
+        "data/licenses/CPYTHON_DOCUMENTATION_LICENSE.rst"
+      ],
+      "accessed_at": "2026-11-13T09:28:52.228890+00:00",
+      "raw_path": "data/raw/tutorial-inputoutput.rst",
+      "raw_sha256": "210f867a77f007c622ca3b268c0962fb49550adec8bedea5f7bb2926a6443795",
+      "normalized_path": "data/normalized/sources/tutorial-inputoutput.txt",
+      "normalized_sha256": "e1a4c53dc7456d6e9087f6349c763500128454b2ef39975710bde91044bf4232",
+      "normalized_character_count": 19434,
+      "metadata": {
+        "section": "inputoutput",
+        "document_type": "tutorial",
+        "language": "en",
+        "version": "3.12.10"
+      },
+      "eligible_unit_count_before_selection": 5,
+      "selected_unit_count": 5,
+      "units": [
+        {
+          "page": 1,
+          "start_offset": 0,
+          "end_offset": 3739,
+          "character_count": 3739,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 2,
+          "start_offset": 3739,
+          "end_offset": 7392,
+          "character_count": 3653,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 3,
+          "start_offset": 7392,
+          "end_offset": 11154,
+          "character_count": 3762,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 4,
+          "start_offset": 11154,
+          "end_offset": 14770,
+          "character_count": 3616,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 5,
+          "start_offset": 14770,
+          "end_offset": 19434,
+          "character_count": 4664,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        }
+      ]
+    },
+    {
+      "source_id": "tutorial-errors",
+      "document_id": "tutorial-errors",
+      "title": "Errors and Exceptions",
+      "source_path_or_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/errors.rst",
+      "snapshot": "v3.12.10",
+      "license_or_permission": "Python Software Foundation License Version 2; retain upstream notices; code examples additionally have documentation license terms",
+      "license_files": [
+        "data/licenses/CPYTHON_LICENSE.txt",
+        "data/licenses/CPYTHON_DOCUMENTATION_LICENSE.rst"
+      ],
+      "accessed_at": "2026-11-13T09:28:52.228890+00:00",
+      "raw_path": "data/raw/tutorial-errors.rst",
+      "raw_sha256": "5abcceab4358053665c35497a23772773718a54325af861bb0640a9efba00f7e",
+      "normalized_path": "data/normalized/sources/tutorial-errors.txt",
+      "normalized_sha256": "1ac5052d39439495da1e966d70d2369d4b61fe395940900a9bee3ee38d1a4a7e",
+      "normalized_character_count": 21545,
+      "metadata": {
+        "section": "errors",
+        "document_type": "tutorial",
+        "language": "en",
+        "version": "3.12.10"
+      },
+      "eligible_unit_count_before_selection": 6,
+      "selected_unit_count": 5,
+      "units": [
+        {
+          "page": 1,
+          "start_offset": 0,
+          "end_offset": 3814,
+          "character_count": 3814,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 2,
+          "start_offset": 3814,
+          "end_offset": 7516,
+          "character_count": 3702,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 3,
+          "start_offset": 7516,
+          "end_offset": 11242,
+          "character_count": 3726,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 4,
+          "start_offset": 11242,
+          "end_offset": 14961,
+          "character_count": 3719,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 5,
+          "start_offset": 14961,
+          "end_offset": 18749,
+          "character_count": 3788,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 6,
+          "start_offset": 18749,
+          "end_offset": 21545,
+          "character_count": 2796,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        }
+      ]
+    },
+    {
+      "source_id": "tutorial-datastructures",
+      "document_id": "tutorial-datastructures",
+      "title": "Data Structures",
+      "source_path_or_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/datastructures.rst",
+      "snapshot": "v3.12.10",
+      "license_or_permission": "Python Software Foundation License Version 2; retain upstream notices; code examples additionally have documentation license terms",
+      "license_files": [
+        "data/licenses/CPYTHON_LICENSE.txt",
+        "data/licenses/CPYTHON_DOCUMENTATION_LICENSE.rst"
+      ],
+      "accessed_at": "2026-11-13T09:28:52.231998+00:00",
+      "raw_path": "data/raw/tutorial-datastructures.rst",
+      "raw_sha256": "c83633cfaa116c223eb4eacaf454f444591257f5340bae4f741726335029cf48",
+      "normalized_path": "data/normalized/sources/tutorial-datastructures.txt",
+      "normalized_sha256": "c412cecc07b2ed4d130c681096d9b620f36a0a5eb4ce7a6a6424cc868f07004f",
+      "normalized_character_count": 23416,
+      "metadata": {
+        "section": "datastructures",
+        "document_type": "tutorial",
+        "language": "en",
+        "version": "3.12.10"
+      },
+      "eligible_unit_count_before_selection": 6,
+      "selected_unit_count": 5,
+      "units": [
+        {
+          "page": 1,
+          "start_offset": 0,
+          "end_offset": 3870,
+          "character_count": 3870,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 2,
+          "start_offset": 3870,
+          "end_offset": 7968,
+          "character_count": 4098,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 3,
+          "start_offset": 7968,
+          "end_offset": 11780,
+          "character_count": 3812,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 4,
+          "start_offset": 11780,
+          "end_offset": 15612,
+          "character_count": 3832,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 5,
+          "start_offset": 15612,
+          "end_offset": 19360,
+          "character_count": 3748,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 6,
+          "start_offset": 19360,
+          "end_offset": 23416,
+          "character_count": 4056,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        }
+      ]
+    },
+    {
+      "source_id": "library-json",
+      "document_id": "library-json",
+      "title": "JSON encoder and decoder",
+      "source_path_or_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+      "snapshot": "v3.12.10",
+      "license_or_permission": "Python Software Foundation License Version 2; retain upstream notices; code examples additionally have documentation license terms",
+      "license_files": [
+        "data/licenses/CPYTHON_LICENSE.txt",
+        "data/licenses/CPYTHON_DOCUMENTATION_LICENSE.rst"
+      ],
+      "accessed_at": "2026-11-13T09:28:53.040937+00:00",
+      "raw_path": "data/raw/library-json.rst",
+      "raw_sha256": "939f692d13cad1c22417edb8704664991f73dfa064f1eec5f59532de99fa93ef",
+      "normalized_path": "data/normalized/sources/library-json.txt",
+      "normalized_sha256": "f2db286deda86ae0922098bc6a4af59d8ba8a6ced1e885834fb2c834210de69a",
+      "normalized_character_count": 26753,
+      "metadata": {
+        "section": "json",
+        "document_type": "library",
+        "language": "en",
+        "version": "3.12.10"
+      },
+      "eligible_unit_count_before_selection": 7,
+      "selected_unit_count": 5,
+      "units": [
+        {
+          "page": 1,
+          "start_offset": 0,
+          "end_offset": 3660,
+          "character_count": 3660,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 2,
+          "start_offset": 3660,
+          "end_offset": 7281,
+          "character_count": 3621,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 3,
+          "start_offset": 7281,
+          "end_offset": 10902,
+          "character_count": 3621,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 4,
+          "start_offset": 10902,
+          "end_offset": 14518,
+          "character_count": 3616,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 5,
+          "start_offset": 14518,
+          "end_offset": 18124,
+          "character_count": 3606,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 6,
+          "start_offset": 18124,
+          "end_offset": 21787,
+          "character_count": 3663,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 7,
+          "start_offset": 21787,
+          "end_offset": 26753,
+          "character_count": 4966,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        }
+      ]
+    },
+    {
+      "source_id": "library-pathlib",
+      "document_id": "library-pathlib",
+      "title": "Object-oriented filesystem paths",
+      "source_path_or_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/pathlib.rst",
+      "snapshot": "v3.12.10",
+      "license_or_permission": "Python Software Foundation License Version 2; retain upstream notices; code examples additionally have documentation license terms",
+      "license_files": [
+        "data/licenses/CPYTHON_LICENSE.txt",
+        "data/licenses/CPYTHON_DOCUMENTATION_LICENSE.rst"
+      ],
+      "accessed_at": "2026-11-13T09:28:53.690462+00:00",
+      "raw_path": "data/raw/library-pathlib.rst",
+      "raw_sha256": "1c4ba9aabc2e36321dcfdc3b86daebace41aa39969eaedb449e4a385d6011af1",
+      "normalized_path": "data/normalized/sources/library-pathlib.txt",
+      "normalized_sha256": "359632e0c3043fe145d9496161567dd207b4a3e75c87455f5bff8237b2803254",
+      "normalized_character_count": 48308,
+      "metadata": {
+        "section": "pathlib",
+        "document_type": "library",
+        "language": "en",
+        "version": "3.12.10"
+      },
+      "eligible_unit_count_before_selection": 13,
+      "selected_unit_count": 5,
+      "units": [
+        {
+          "page": 1,
+          "start_offset": 0,
+          "end_offset": 3613,
+          "character_count": 3613,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 2,
+          "start_offset": 3613,
+          "end_offset": 7262,
+          "character_count": 3649,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 3,
+          "start_offset": 7262,
+          "end_offset": 10930,
+          "character_count": 3668,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 4,
+          "start_offset": 10930,
+          "end_offset": 14551,
+          "character_count": 3621,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 5,
+          "start_offset": 14551,
+          "end_offset": 18151,
+          "character_count": 3600,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 6,
+          "start_offset": 18151,
+          "end_offset": 21954,
+          "character_count": 3803,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 7,
+          "start_offset": 21954,
+          "end_offset": 25581,
+          "character_count": 3627,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 8,
+          "start_offset": 25581,
+          "end_offset": 29187,
+          "character_count": 3606,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 9,
+          "start_offset": 29187,
+          "end_offset": 32886,
+          "character_count": 3699,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 10,
+          "start_offset": 32886,
+          "end_offset": 36719,
+          "character_count": 3833,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 11,
+          "start_offset": 36719,
+          "end_offset": 40336,
+          "character_count": 3617,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 12,
+          "start_offset": 40336,
+          "end_offset": 44051,
+          "character_count": 3715,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 13,
+          "start_offset": 44051,
+          "end_offset": 48308,
+          "character_count": 4257,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        }
+      ]
+    },
+    {
+      "source_id": "library-io",
+      "document_id": "library-io",
+      "title": "Core tools for working with streams",
+      "source_path_or_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/io.rst",
+      "snapshot": "v3.12.10",
+      "license_or_permission": "Python Software Foundation License Version 2; retain upstream notices; code examples additionally have documentation license terms",
+      "license_files": [
+        "data/licenses/CPYTHON_LICENSE.txt",
+        "data/licenses/CPYTHON_DOCUMENTATION_LICENSE.rst"
+      ],
+      "accessed_at": "2026-11-13T09:29:02.968034+00:00",
+      "raw_path": "data/raw/library-io.rst",
+      "raw_sha256": "6f9739389fe7d1499472a892fc6ba25a1c96a5d980e03437f8b29a37dabef9a1",
+      "normalized_path": "data/normalized/sources/library-io.txt",
+      "normalized_sha256": "5ae9b06530a6932b25ad63179b07ee3bbc8155c2d48e368fd62180deb2402019",
+      "normalized_character_count": 42515,
+      "metadata": {
+        "section": "io",
+        "document_type": "library",
+        "language": "en",
+        "version": "3.12.10"
+      },
+      "eligible_unit_count_before_selection": 12,
+      "selected_unit_count": 5,
+      "units": [
+        {
+          "page": 1,
+          "start_offset": 0,
+          "end_offset": 3792,
+          "character_count": 3792,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 2,
+          "start_offset": 3792,
+          "end_offset": 7392,
+          "character_count": 3600,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 3,
+          "start_offset": 7392,
+          "end_offset": 11021,
+          "character_count": 3629,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 4,
+          "start_offset": 11021,
+          "end_offset": 14873,
+          "character_count": 3852,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 5,
+          "start_offset": 14873,
+          "end_offset": 18561,
+          "character_count": 3688,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 6,
+          "start_offset": 18561,
+          "end_offset": 22343,
+          "character_count": 3782,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 7,
+          "start_offset": 22343,
+          "end_offset": 25965,
+          "character_count": 3622,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 8,
+          "start_offset": 25965,
+          "end_offset": 29618,
+          "character_count": 3653,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 9,
+          "start_offset": 29618,
+          "end_offset": 33243,
+          "character_count": 3625,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 10,
+          "start_offset": 33243,
+          "end_offset": 36857,
+          "character_count": 3614,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 11,
+          "start_offset": 36857,
+          "end_offset": 40945,
+          "character_count": 4088,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 12,
+          "start_offset": 40945,
+          "end_offset": 42515,
+          "character_count": 1570,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        }
+      ]
+    },
+    {
+      "source_id": "library-stdtypes",
+      "document_id": "library-stdtypes",
+      "title": "Built-in Types",
+      "source_path_or_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/stdtypes.rst",
+      "snapshot": "v3.12.10",
+      "license_or_permission": "Python Software Foundation License Version 2; retain upstream notices; code examples additionally have documentation license terms",
+      "license_files": [
+        "data/licenses/CPYTHON_LICENSE.txt",
+        "data/licenses/CPYTHON_DOCUMENTATION_LICENSE.rst"
+      ],
+      "accessed_at": "2026-11-13T09:29:02.106554+00:00",
+      "raw_path": "data/raw/library-stdtypes.rst",
+      "raw_sha256": "3c61e89ca96738cba12cd45632b2728e4fcb3637c340996f59f97fa4eb8614b0",
+      "normalized_path": "data/normalized/sources/library-stdtypes.txt",
+      "normalized_sha256": "b078e4829a366144778a88b03b19d2b0adf77ba77347eb20e900c0e414777f8b",
+      "normalized_character_count": 189071,
+      "metadata": {
+        "section": "stdtypes",
+        "document_type": "library",
+        "language": "en",
+        "version": "3.12.10"
+      },
+      "eligible_unit_count_before_selection": 49,
+      "selected_unit_count": 5,
+      "units": [
+        {
+          "page": 1,
+          "start_offset": 0,
+          "end_offset": 3787,
+          "character_count": 3787,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 2,
+          "start_offset": 3787,
+          "end_offset": 7754,
+          "character_count": 3967,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 3,
+          "start_offset": 7754,
+          "end_offset": 11988,
+          "character_count": 4234,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 4,
+          "start_offset": 11988,
+          "end_offset": 15880,
+          "character_count": 3892,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 5,
+          "start_offset": 15880,
+          "end_offset": 19492,
+          "character_count": 3612,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 6,
+          "start_offset": 19492,
+          "end_offset": 23195,
+          "character_count": 3703,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 7,
+          "start_offset": 23195,
+          "end_offset": 26863,
+          "character_count": 3668,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 8,
+          "start_offset": 26863,
+          "end_offset": 30824,
+          "character_count": 3961,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 9,
+          "start_offset": 30824,
+          "end_offset": 34703,
+          "character_count": 3879,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 10,
+          "start_offset": 34703,
+          "end_offset": 38334,
+          "character_count": 3631,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 11,
+          "start_offset": 38334,
+          "end_offset": 41999,
+          "character_count": 3665,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 12,
+          "start_offset": 41999,
+          "end_offset": 45798,
+          "character_count": 3799,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 13,
+          "start_offset": 45798,
+          "end_offset": 49583,
+          "character_count": 3785,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 14,
+          "start_offset": 49583,
+          "end_offset": 53245,
+          "character_count": 3662,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 15,
+          "start_offset": 53245,
+          "end_offset": 57097,
+          "character_count": 3852,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 16,
+          "start_offset": 57097,
+          "end_offset": 60795,
+          "character_count": 3698,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 17,
+          "start_offset": 60795,
+          "end_offset": 64489,
+          "character_count": 3694,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 18,
+          "start_offset": 64489,
+          "end_offset": 68316,
+          "character_count": 3827,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 19,
+          "start_offset": 68316,
+          "end_offset": 72052,
+          "character_count": 3736,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 20,
+          "start_offset": 72052,
+          "end_offset": 75734,
+          "character_count": 3682,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 21,
+          "start_offset": 75734,
+          "end_offset": 79710,
+          "character_count": 3976,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 22,
+          "start_offset": 79710,
+          "end_offset": 85081,
+          "character_count": 5371,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 23,
+          "start_offset": 85081,
+          "end_offset": 88762,
+          "character_count": 3681,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 24,
+          "start_offset": 88762,
+          "end_offset": 92415,
+          "character_count": 3653,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 25,
+          "start_offset": 92415,
+          "end_offset": 96076,
+          "character_count": 3661,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 26,
+          "start_offset": 96076,
+          "end_offset": 99840,
+          "character_count": 3764,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 27,
+          "start_offset": 99840,
+          "end_offset": 103735,
+          "character_count": 3895,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 28,
+          "start_offset": 103735,
+          "end_offset": 107382,
+          "character_count": 3647,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 29,
+          "start_offset": 107382,
+          "end_offset": 110982,
+          "character_count": 3600,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 30,
+          "start_offset": 110982,
+          "end_offset": 114697,
+          "character_count": 3715,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 31,
+          "start_offset": 114697,
+          "end_offset": 118416,
+          "character_count": 3719,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 32,
+          "start_offset": 118416,
+          "end_offset": 122318,
+          "character_count": 3902,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 33,
+          "start_offset": 122318,
+          "end_offset": 127548,
+          "character_count": 5230,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 34,
+          "start_offset": 127548,
+          "end_offset": 131480,
+          "character_count": 3932,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 35,
+          "start_offset": 131480,
+          "end_offset": 135104,
+          "character_count": 3624,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 36,
+          "start_offset": 135104,
+          "end_offset": 138966,
+          "character_count": 3862,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 37,
+          "start_offset": 138966,
+          "end_offset": 142578,
+          "character_count": 3612,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 38,
+          "start_offset": 142578,
+          "end_offset": 146179,
+          "character_count": 3601,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 39,
+          "start_offset": 146179,
+          "end_offset": 149803,
+          "character_count": 3624,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 40,
+          "start_offset": 149803,
+          "end_offset": 153633,
+          "character_count": 3830,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 41,
+          "start_offset": 153633,
+          "end_offset": 157292,
+          "character_count": 3659,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 42,
+          "start_offset": 157292,
+          "end_offset": 160910,
+          "character_count": 3618,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 43,
+          "start_offset": 160910,
+          "end_offset": 164857,
+          "character_count": 3947,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 44,
+          "start_offset": 164857,
+          "end_offset": 168540,
+          "character_count": 3683,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 45,
+          "start_offset": 168540,
+          "end_offset": 172160,
+          "character_count": 3620,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 46,
+          "start_offset": 172160,
+          "end_offset": 175870,
+          "character_count": 3710,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 47,
+          "start_offset": 175870,
+          "end_offset": 179830,
+          "character_count": 3960,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 48,
+          "start_offset": 179830,
+          "end_offset": 183673,
+          "character_count": 3843,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 49,
+          "start_offset": 183673,
+          "end_offset": 189071,
+          "character_count": 5398,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        }
+      ]
+    },
+    {
+      "source_id": "library-exceptions",
+      "document_id": "library-exceptions",
+      "title": "Built-in Exceptions",
+      "source_path_or_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/exceptions.rst",
+      "snapshot": "v3.12.10",
+      "license_or_permission": "Python Software Foundation License Version 2; retain upstream notices; code examples additionally have documentation license terms",
+      "license_files": [
+        "data/licenses/CPYTHON_LICENSE.txt",
+        "data/licenses/CPYTHON_DOCUMENTATION_LICENSE.rst"
+      ],
+      "accessed_at": "2026-11-13T09:28:57.002769+00:00",
+      "raw_path": "data/raw/library-exceptions.rst",
+      "raw_sha256": "e4de03f241f7e0f8ae22780e17b17eb1a553de9b827769be4fb8c40c0ad9ac1c",
+      "normalized_path": "data/normalized/sources/library-exceptions.txt",
+      "normalized_sha256": "9b983e6bde95ccecb6e53ef6f9d493d877d725ce54ddc9d988cf01bc62988d5d",
+      "normalized_character_count": 34567,
+      "metadata": {
+        "section": "exceptions",
+        "document_type": "library",
+        "language": "en",
+        "version": "3.12.10"
+      },
+      "eligible_unit_count_before_selection": 9,
+      "selected_unit_count": 5,
+      "units": [
+        {
+          "page": 1,
+          "start_offset": 0,
+          "end_offset": 3634,
+          "character_count": 3634,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 2,
+          "start_offset": 3634,
+          "end_offset": 7273,
+          "character_count": 3639,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 3,
+          "start_offset": 7273,
+          "end_offset": 10889,
+          "character_count": 3616,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 4,
+          "start_offset": 10889,
+          "end_offset": 14659,
+          "character_count": 3770,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 5,
+          "start_offset": 14659,
+          "end_offset": 18276,
+          "character_count": 3617,
+          "selected": true,
+          "selection_reason": "first_five_sequential_units_per_source"
+        },
+        {
+          "page": 6,
+          "start_offset": 18276,
+          "end_offset": 21918,
+          "character_count": 3642,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 7,
+          "start_offset": 21918,
+          "end_offset": 25541,
+          "character_count": 3623,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 8,
+          "start_offset": 25541,
+          "end_offset": 29164,
+          "character_count": 3623,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        },
+        {
+          "page": 9,
+          "start_offset": 29164,
+          "end_offset": 34567,
+          "character_count": 5403,
+          "selected": false,
+          "selection_reason": "outside_predeclared_corpus_scope_not_counted"
+        }
+      ]
+    }
+  ]
+}

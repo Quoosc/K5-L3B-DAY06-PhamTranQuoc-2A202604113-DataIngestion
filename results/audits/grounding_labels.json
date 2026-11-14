@@ -1,0 +1,539 @@
+[
+  {
+    "review_id": "G001",
+    "question_id": "q22",
+    "label": 2,
+    "reason": "Hit 1, library-io trang 5, nêu đúng cả hai điều kiện của RawIOBase.read: không có byte sẵn ở chế độ non-blocking trả None; trả 0 byte khi size khác 0 biểu thị EOF. Đoạn có tên lớp và phương thức để truy nguyên.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "52b80d6fea5eaaf2adf1a82b7b1ffe65262e1559cc60c31ba45526815da0b2c1"
+    ],
+    "strategy": "B",
+    "human_label": 2,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G002",
+    "question_id": "q17",
+    "label": 2,
+    "reason": "Hit 1 nói trực tiếp rooted relative path trên Windows không đặt lại drive, kèm ví dụ c:/Windows với /Program Files thành c:/Program Files. Hit 2 nhắc lại cùng quy tắc; đủ trả lời và truy nguyên.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "946aeae6db18a5665f16b75481ad63eec5cd68810a6d629f2526f34e1b756a8d",
+      "b3c30fca18b651484bf7d9b7e2e24c5ca276ed6ec2ee547e135f77f7295e77a0"
+    ],
+    "strategy": "C",
+    "human_label": 2,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G003",
+    "question_id": "q14",
+    "label": 0,
+    "reason": "Ba hit đều thuộc library-json nhưng chỉ có JSONDecoder, bảng chuyển kiểu và các callback object_hook, object_pairs_hook, parse_float, parse_int. Không có raw_decode, cách xử lý dữ liệu thừa phía sau hay cặp giá trị gồm đối tượng và chỉ số kết thúc.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "50d8c40a7b20ae9eb03705761a71ce89b9a368b8658b01b13ba7db547b496018",
+      "8d1970c123185e058cfb940ca8fdc301d56ee12116cd010beb92a93b051a4630",
+      "85729679fc46ff7e4d2dc84932a0e3d740d5c4e484257c3ee5d5543e1bab43d4"
+    ],
+    "strategy": "B",
+    "human_label": 0,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G004",
+    "question_id": "q26",
+    "label": 1,
+    "reason": "Hit 1 có mã minh họa bit_length bằng bin, bỏ dấu và các số 0 đầu rồi lấy độ dài. Đây là bằng chứng liên quan, nhưng thiếu phát biểu đặc trưng k với 2**(k-1) <= abs(x) < 2**k và trường hợp x bằng 0 được nêu rõ; hai hit còn lại nói về to_bytes và I/O.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "0c4a1c738dd8d81a7e09c1d9c0f4aa896b0af3ecf605352cced80311d8a7bccc"
+    ],
+    "strategy": "C",
+    "human_label": 1,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G005",
+    "question_id": "q23",
+    "label": 0,
+    "reason": "Hit 2 chỉ liệt kê writelines trong bảng phương thức IOBase. Hit 1 và 3 mô tả lớp, close, flush, readable và readline; không đoạn nào nói writelines có thêm dấu phân cách dòng hay yêu cầu chuỗi đầu vào tự chứa dấu phân cách.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "c9f6eb42cc59e60be6c2ddd4663876b6759f7b2315199e6c131295cbb9dc9037",
+      "010c425a5d1cdf4141354462a3c22a4a20e071bd184469c3e45720491a51747f",
+      "9994cdd0fc147ce8927b4560484fba2d4d2efc46c2a9011c5354dd8c85b3afd3"
+    ],
+    "strategy": "B",
+    "human_label": 0,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G006",
+    "question_id": "q12",
+    "label": 2,
+    "reason": "Hit 1 nêu allow_nan=False khiến nan, inf và -inf gây ValueError để tuân thủ JSON. Hit 2 xác nhận hành vi ngược với allow_nan=True. Cả hai có nguồn library-json, đúng phạm vi library được hỏi.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "aec419e705220942a0dd99e4ea30dc873d395a08cf3d2e03b65a9e0484303dae",
+      "b0aa08b672248be7889a964d7c5cac598e6fec8361522fe22ecd27fd09832e1d"
+    ],
+    "strategy": "A",
+    "human_label": 2,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G007",
+    "question_id": "q08",
+    "label": 2,
+    "reason": "Hit 3, tutorial-datastructures trang 4, nói tuple một phần tử được tạo bằng dấu phẩy sau giá trị và chỉ đặt ngoặc là chưa đủ, kèm singleton = hello có dấu phẩy. Hit 1 về ngoặc trong comprehension không phải bằng chứng chính.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "5c31eccfe033e727b7e89f1f10d54a0291a311978b6784f31100d2cd785e2ccf"
+    ],
+    "strategy": "C",
+    "human_label": 2,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G008",
+    "question_id": "q17",
+    "label": 2,
+    "reason": "Hit 1, library-pathlib trang 2, giữ nguyên câu quy định drive không bị đặt lại khi gặp rooted relative path trên Windows và ví dụ c:/Program Files. Dù mép chunk cắt phần khác, điều kiện và kết luận cần trả lời đều đầy đủ.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "e8ee7a0ac946ebcbb6c5deebd9296707d4a4dbe476289af7c5ffbbf4e4953259"
+    ],
+    "strategy": "A",
+    "human_label": 2,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G009",
+    "question_id": "q14",
+    "label": 0,
+    "reason": "Ba hit chỉ trình bày JSONDecoder và callback chuyển đổi kiểu. Không có tên raw_decode, đầu vào chứa dữ liệu thừa hay tuple gồm kết quả giải mã và vị trí kết thúc. Đúng họ tài liệu nhưng chưa có bằng chứng cho câu trả lời.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "50d8c40a7b20ae9eb03705761a71ce89b9a368b8658b01b13ba7db547b496018",
+      "8d1970c123185e058cfb940ca8fdc301d56ee12116cd010beb92a93b051a4630",
+      "85729679fc46ff7e4d2dc84932a0e3d740d5c4e484257c3ee5d5543e1bab43d4"
+    ],
+    "strategy": "C",
+    "human_label": 0,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G010",
+    "question_id": "q19",
+    "label": 0,
+    "reason": "Top-3 nói về is_reserved, is_absolute, is_relative_to và relative_to. ValueError xuất hiện ở relative_to không chứng minh hành vi của as_uri; không có điều kiện đường dẫn tuyệt đối khi tạo file URI.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "342b9266edd99de64157dbfbc4ace42fc5b9c42d41845e0b80e64c73584fcac4",
+      "b432870421586fa9928157b365bd45b5b405968bb464ca5d6b3c3e5d7b1ea44f",
+      "df5f8b4867edb9eee58b825cd79f702d7c871ce6d37efc5ad9b64858552c207f"
+    ],
+    "strategy": "A",
+    "human_label": 0,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G011",
+    "question_id": "q14",
+    "label": 0,
+    "reason": "Top-3 chứa JSONDecoder, các hook, strict và JSONDecodeError; hit 3 dừng ở tiêu đề decode(s). Không có raw_decode(s), xử lý phần dữ liệu theo sau hay chỉ số nơi JSON kết thúc, nên chưa hỗ trợ câu trả lời.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "4f2926054cbdd1874873b7d44f55eaef2cd8756732b9b970a2a6dccd92808f0b",
+      "93dbf8d7bf0859e965b3936ddf38d3e6cf788904c3d2134d6b8d0917a6713eac",
+      "d4a6c2afddc6e0d24d95ba38680d3c9dc1e64c79525007db7f884c6a955460f4"
+    ],
+    "strategy": "A",
+    "human_label": 0,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G012",
+    "question_id": "q26",
+    "label": 1,
+    "reason": "Hit 1 cho mã bit_length dựa trên độ dài biểu diễn nhị phân sau khi bỏ dấu và số 0 đầu. Thiếu phát biểu bất đẳng thức cho số khác 0 và trường hợp 0 trong phần mô tả; hit 2 về to_bytes, hit 3 về raw I/O không bổ sung điều kiện này.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "0c4a1c738dd8d81a7e09c1d9c0f4aa896b0af3ecf605352cced80311d8a7bccc"
+    ],
+    "strategy": "B",
+    "human_label": 1,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G013",
+    "question_id": "q29",
+    "label": 0,
+    "reason": "Các hit về RawIOBase.read, loại dữ liệu của text/binary I/O và các phương thức IOBase khác. Không có input() gây EOFError hoặc text-mode read/readline trả chuỗi rỗng. Quy tắc 0 byte của raw binary stream không thay thế được hai vế được hỏi.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "52b80d6fea5eaaf2adf1a82b7b1ffe65262e1559cc60c31ba45526815da0b2c1",
+      "c4d659fed89e6805d7e636dcf3a42a6b388dcc7039cb8f55d196d2a86c351b85",
+      "9994cdd0fc147ce8927b4560484fba2d4d2efc46c2a9011c5354dd8c85b3afd3"
+    ],
+    "strategy": "C",
+    "human_label": 0,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G014",
+    "question_id": "q23",
+    "label": 1,
+    "reason": "Hit 2 có câu Line separators are not added và lời khuyên mỗi dòng tự có dấu phân cách ở cuối, nhưng chunk bắt đầu giữa đoạn nên mất tên writelines và phần giới thiệu phương thức. Hit 3 chỉ liệt kê tên writelines trong bảng. Có nội dung đáp án nhưng liên kết trực tiếp giữa hành vi và phương thức bị thiếu.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "0086912ce723969f898fa5db4246cf07540e2a2a24cc1f0914f3c2ddac802582",
+      "1211e1fbb11d5b76f48def82c91bb562ec199e913cd5fdf5855bf1402dc46d8e"
+    ],
+    "strategy": "A",
+    "human_label": 1,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G015",
+    "question_id": "q19",
+    "label": 0,
+    "reason": "Ba hit đề cập is_relative_to/is_reserved, cách ghép đoạn đường dẫn và match với pattern. Không có as_uri hoặc quy tắc ném ValueError khi đường dẫn tương đối; không thể suy hành vi của phương thức này từ các phương thức khác.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "77e4eb68bbea842d283aa2b1c8a853474c5a7f1abaa987c0338d5367c14c2de6",
+      "946aeae6db18a5665f16b75481ad63eec5cd68810a6d629f2526f34e1b756a8d",
+      "c5d41ae7b5532246444a6da23ea99dd4f913bf102280550dfd24f312f1e10473"
+    ],
+    "strategy": "B",
+    "human_label": 0,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G016",
+    "question_id": "q29",
+    "label": 0,
+    "reason": "Hit 1 nói về text/binary mode trong tutorial, còn hit 2 và 3 nói RawIOBase. Không hit nào có input() gây EOFError hoặc text read/readline trả chuỗi rỗng. Hit 1 còn nằm ngoài phạm vi document_type=library trong câu hỏi.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "9e848345e21b5071e2764ac6b406e25112081c8502cfc8ce26ef0245e344f9fa",
+      "0134b01f89a60836de97c304f8e97d98291b3cb42d47f6a79265d923d202fdb1",
+      "0086912ce723969f898fa5db4246cf07540e2a2a24cc1f0914f3c2ddac802582"
+    ],
+    "strategy": "A",
+    "human_label": 0,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G017",
+    "question_id": "q05",
+    "label": 2,
+    "reason": "Hit 2 nêu rõ return trong finally quyết định giá trị trả về thay cho return trong try, rồi minh họa try trả True nhưng finally trả False và kết quả False. Điều kiện cả hai khối có return được hỗ trợ trực tiếp.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "ba02509e17c85cd5bfe62aaeec3cbc67005ec94a77c32093ed6f10f918214794"
+    ],
+    "strategy": "B",
+    "human_label": 2,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G018",
+    "question_id": "q17",
+    "label": 2,
+    "reason": "Hit 1 nêu drive Windows không bị đặt lại bởi rooted relative path và có ví dụ c:/Windows ghép /Program Files. Hit 2 tiếp tục xác nhận quy tắc khi dùng toán tử ghép đường dẫn. Đủ bằng chứng có nguồn và điều kiện nền tảng.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "946aeae6db18a5665f16b75481ad63eec5cd68810a6d629f2526f34e1b756a8d",
+      "b3c30fca18b651484bf7d9b7e2e24c5ca276ed6ec2ee547e135f77f7295e77a0"
+    ],
+    "strategy": "B",
+    "human_label": 2,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G019",
+    "question_id": "q22",
+    "label": 2,
+    "reason": "Hit 1 có đầy đủ tiêu đề RawIOBase, read(size=-1) và hai câu phân biệt 0 byte khi size khác 0 là EOF với non-blocking không có byte thì trả None. Phần đầu chunk bị cắt ở phương thức trước không ảnh hưởng bằng chứng này.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "0086912ce723969f898fa5db4246cf07540e2a2a24cc1f0914f3c2ddac802582"
+    ],
+    "strategy": "A",
+    "human_label": 2,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G020",
+    "question_id": "q05",
+    "label": 2,
+    "reason": "Hit 2 nêu trực tiếp return trong finally thay cho giá trị return ở try và có ví dụ bool_return cho kết quả False. Hit 1 chỉ bổ trợ thời điểm chạy finally; hit 2 tự đủ trả lời câu hỏi.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "ba02509e17c85cd5bfe62aaeec3cbc67005ec94a77c32093ed6f10f918214794"
+    ],
+    "strategy": "C",
+    "human_label": 2,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G021",
+    "question_id": "q19",
+    "label": 0,
+    "reason": "Các hit đều thuộc pathlib nhưng nội dung là is_relative_to/is_reserved, ghép đường dẫn và match. Không có as_uri, file URI hay ValueError gắn với yêu cầu đường dẫn tuyệt đối, nên không hỗ trợ đáp án.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "77e4eb68bbea842d283aa2b1c8a853474c5a7f1abaa987c0338d5367c14c2de6",
+      "946aeae6db18a5665f16b75481ad63eec5cd68810a6d629f2526f34e1b756a8d",
+      "c5d41ae7b5532246444a6da23ea99dd4f913bf102280550dfd24f312f1e10473"
+    ],
+    "strategy": "C",
+    "human_label": 0,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G022",
+    "question_id": "q29",
+    "label": 1,
+    "reason": "Hit 2 nêu file read và readline trả chuỗi rỗng ở EOF, hỗ trợ một vế của sự khác biệt. Tuy nhiên không có input() gây EOFError, và bằng chứng vế file này thuộc tutorial-inputoutput thay vì library như câu hỏi yêu cầu. Hit 3 về RawIOBase không bù được các thiếu hụt đó.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "e9356df2bc982ebf77844e6e34144ebfb39208ccd98bb1a7a0e1a203f5b43c77",
+      "52b80d6fea5eaaf2adf1a82b7b1ffe65262e1559cc60c31ba45526815da0b2c1"
+    ],
+    "strategy": "B",
+    "human_label": 1,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G023",
+    "question_id": "q08",
+    "label": 2,
+    "reason": "Hit 3 giải thích rõ tuple một phần tử cần dấu phẩy theo sau giá trị, ngoặc đơn quanh một giá trị không đủ, kèm ví dụ singleton. Đây là bằng chứng trực tiếp dù hit 1 về dấu ngoặc trong comprehension có thể gây nhiễu.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "5c31eccfe033e727b7e89f1f10d54a0291a311978b6784f31100d2cd785e2ccf"
+    ],
+    "strategy": "B",
+    "human_label": 2,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G024",
+    "question_id": "q26",
+    "label": 2,
+    "reason": "Hit 2 có tiêu đề int.bit_length(), công thức duy nhất k với 2**(k-1) <= abs(x) < 2**k khi x khác 0 và câu x bằng 0 trả 0. Đủ toàn bộ điều kiện, không cần suy từ hit 1 về to_bytes hay hit 3 về bit_count.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "d545437b55bf0d476a4e4b3fe4e62614554950d1399fdf256925717fa33e056e"
+    ],
+    "strategy": "A",
+    "human_label": 2,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G025",
+    "question_id": "q12",
+    "label": 2,
+    "reason": "Hit 2 nêu chính xác allow_nan=False, ba giá trị nan/inf/-inf và ValueError theo JSON specification; hit 1 cũng nêu nhánh otherwise tương ứng. Cả hai từ library-json nên đúng điều kiện phạm vi.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "52a02ca953eab33e7fe110d16fd8f572445ddbbbe6c64bc213c5a3c1b302e303",
+      "f0752bf564ea9717f322ddded8890b1e67672810f72de0380ddb8ba99ddfe177"
+    ],
+    "strategy": "B",
+    "human_label": 2,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G026",
+    "question_id": "q12",
+    "label": 2,
+    "reason": "Hit 1 giải thích allow_nan=True chấp nhận NaN/Infinity/-Infinity còn nhánh ngược gây ValueError. Hit 2 ghi rõ False, cả ba giá trị và yêu cầu tuân thủ JSON. Nguồn library-json phù hợp với câu hỏi.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "52a02ca953eab33e7fe110d16fd8f572445ddbbbe6c64bc213c5a3c1b302e303",
+      "f0752bf564ea9717f322ddded8890b1e67672810f72de0380ddb8ba99ddfe177"
+    ],
+    "strategy": "C",
+    "human_label": 2,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G027",
+    "question_id": "q23",
+    "label": 0,
+    "reason": "Hit 2 chỉ có tên writelines trong bảng mixin; các hit khác nói về IOBase, close, flush, readable và readline. Không có quy tắc có hoặc không tự thêm dấu phân cách giữa các chuỗi, nên không đủ bằng chứng trả lời.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "c9f6eb42cc59e60be6c2ddd4663876b6759f7b2315199e6c131295cbb9dc9037",
+      "010c425a5d1cdf4141354462a3c22a4a20e071bd184469c3e45720491a51747f",
+      "9994cdd0fc147ce8927b4560484fba2d4d2efc46c2a9011c5354dd8c85b3afd3"
+    ],
+    "strategy": "C",
+    "human_label": 0,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G028",
+    "question_id": "q05",
+    "label": 2,
+    "reason": "Hit 1 bị cắt đúng giữa câu về return trong finally, nhưng hit 2 giữ trọn quy tắc giá trị của finally thay cho try và ví dụ True/False. Hợp top-3 vẫn đủ trả lời và trỏ tới tutorial-errors trang 4.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "f74183c98b7c70ffe0d394d55fd9b654055bcb4899d606aa240f8532be4d8b4d"
+    ],
+    "strategy": "A",
+    "human_label": 2,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G029",
+    "question_id": "q08",
+    "label": 2,
+    "reason": "Hit 2 trình bày trọn điều kiện tuple một phần tử, cần dấu phẩy và ngoặc đơn chưa đủ, có ví dụ singleton và len bằng 1. Hit 1 về tuple nói chung không thay thế nhưng cũng không làm thiếu bằng chứng ở hit 2.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "36d68030e490e42f4d2490968c7f9328612a6abae3a75d442acabcdc0ab4b7ea"
+    ],
+    "strategy": "A",
+    "human_label": 2,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  },
+  {
+    "review_id": "G030",
+    "question_id": "q22",
+    "label": 2,
+    "reason": "Hit 1 có tên RawIOBase.read và phân biệt rõ size khác 0 mà trả 0 byte là EOF, còn non-blocking không có byte sẵn trả None. Cả hai vế cùng nằm trong đoạn truy nguyên được; hit 2 bổ trợ quy tắc non-blocking ở phương thức khác.",
+    "reviewer": "Codex AI",
+    "method": "AI-assisted content review, partially blinded to strategy and automatic metric",
+    "human_reviewed": true,
+    "cited_chunk_ids": [
+      "52b80d6fea5eaaf2adf1a82b7b1ffe65262e1559cc60c31ba45526815da0b2c1"
+    ],
+    "strategy": "C",
+    "human_label": 2,
+    "human_reason": "Đã đối chiếu mẫu với nguồn và tiêu chí audit. Đồng ý với nhãn và lý do chi tiết trong trường reason.",
+    "human_reviewer": "Phạm Trấn Quốc",
+    "human_reviewed_at": "2026-11-13T19:28:55+07:00"
+  }
+]

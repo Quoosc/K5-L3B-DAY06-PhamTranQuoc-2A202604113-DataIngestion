@@ -1,0 +1,35 @@
+{
+  "status": "pass",
+  "eligible_unit_count": 40,
+  "minimum_character_count": 3600,
+  "total_selected_characters": 150147,
+  "document_count": 8,
+  "metadata_values": {
+    "section": [
+      "datastructures",
+      "errors",
+      "exceptions",
+      "inputoutput",
+      "io",
+      "json",
+      "pathlib",
+      "stdtypes"
+    ],
+    "document_type": [
+      "library",
+      "tutorial"
+    ],
+    "language": [
+      "en"
+    ],
+    "version": [
+      "3.12.10"
+    ]
+  },
+  "errors": [],
+  "unit_definition": "sequential normalized RST text slices, >=1500 characters, exact [start_offset,end_offset); not physical PDF pages",
+  "selection_rule": "first five sequential eligible units from each of eight fixed documents, chosen before retrieval/benchmark",
+  "pages_sha256": "00ed526c1de45d2d96c957ce0105a074d53ccad50d12402a4db49e9773e5fbea",
+  "blank_source_count": 0,
+  "duplicate_content_count": 0
+}

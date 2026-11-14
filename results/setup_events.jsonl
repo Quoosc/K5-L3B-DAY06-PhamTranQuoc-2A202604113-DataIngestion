@@ -1,0 +1,2 @@
+{"recorded_at": "2026-11-13T09:37:06.340473+00:00", "stage": "model_download", "error": "Full streaming download timed out reading Hugging Face CDN for large files.", "resolution": "Retrying same pinned revision through validated HTTP byte ranges; no change of model or embedding semantics.", "status": "retry_in_progress"}
+{"recorded_at": "2026-11-13T09:43:58.524158+00:00", "stage": "model_download", "status": "resolved", "resolution": "Same pinned E5 snapshot downloaded completely using validated ranges; asset sizes and SHA256 in artifacts/model_download.json."}

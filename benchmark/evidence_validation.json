@@ -1,0 +1,606 @@
+{
+  "question_count": 30,
+  "split_counts": {
+    "dev": 20,
+    "test": 10
+  },
+  "filter_counts": {
+    "dev": 4,
+    "test": 2
+  },
+  "all_exact_quotes_exist": true,
+  "method": "Codex-authored questions; automated source/quote/filter checks; no retrieval used",
+  "human_reviewed": false,
+  "checks": [
+    {
+      "id": "q01",
+      "evidence": [
+        {
+          "source_id": "tutorial-inputoutput",
+          "page": 1,
+          "evidence_quote": "The str function is meant to return representations of values which are fairly human-readable, while repr is meant to generate representations which can be read by the interpreter (or will force a SyntaxError if there is no equivalent syntax).  For objects which don't have a particular representation for human consumption, str will return the same value as repr.  Many values, such as numbers or structures like lists and dictionaries, have the same representation using either function.  Strings, in particular, have two distinct representations.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/inputoutput.rst",
+          "page_offset": 2312,
+          "source_offset": 2312,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q02",
+      "evidence": [
+        {
+          "source_id": "tutorial-inputoutput",
+          "page": 4,
+          "evidence_quote": "It is good practice to use the with keyword when dealing with file objects.  The advantage is that the file is properly closed after its suite finishes, even if an exception is raised at some point.  Using !with is also much shorter than writing equivalent try\\ -\\ finally blocks::",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/inputoutput.rst",
+          "page_offset": 989,
+          "source_offset": 12143,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        },
+        {
+          "source_id": "tutorial-errors",
+          "page": 5,
+          "evidence_quote": "with open(\"myfile.txt\") as f:\n       for line in f:\n           print(line, end=\"\")\n\nAfter the statement is executed, the file *f* is always closed, even if a problem was encountered while processing the lines. Objects which, like files, provide predefined clean-up actions will indicate this in their documentation.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/errors.rst",
+          "page_offset": 935,
+          "source_offset": 15896,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q03",
+      "evidence": [
+        {
+          "source_id": "tutorial-inputoutput",
+          "page": 5,
+          "evidence_quote": "In text files (those opened without a b in the mode string), only seeks relative to the beginning of the file are allowed (the exception being seeking to the very file end with seek(0, 2)) and the only valid *offset* values are those returned from the f.tell(), or zero. Any other *offset* value produces undefined behaviour.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/inputoutput.rst",
+          "page_offset": 1537,
+          "source_offset": 16307,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q04",
+      "evidence": [
+        {
+          "source_id": "tutorial-errors",
+          "page": 2,
+          "evidence_quote": "A class in an except clause matches exceptions which are instances of the class itself or one of its derived classes (but not the other way around --- an *except clause* listing a derived class does not match instances of its base classes). For example, the following code will print B, C, D in that order::",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/errors.rst",
+          "page_offset": 662,
+          "source_offset": 4476,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q05",
+      "evidence": [
+        {
+          "source_id": "tutorial-errors",
+          "page": 4,
+          "evidence_quote": "* If a !finally clause includes a !return\n  statement, the returned value will be the one from the\n  !finally clause's !return statement, not the\n  value from the !try clause's !return\n  statement.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/errors.rst",
+          "page_offset": 2452,
+          "source_offset": 13694,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q06",
+      "evidence": [
+        {
+          "source_id": "tutorial-datastructures",
+          "page": 2,
+          "evidence_quote": "It is also possible to use a list as a queue, where the first element added is the first element retrieved (\"first-in, first-out\"); however, lists are not efficient for this purpose.  While appends and pops from the end of list are fast, doing inserts or pops from the beginning of a list is slow (because all of the other elements have to be shifted by one).\n\nTo implement a queue, use collections.deque which was designed to have fast appends and pops from both ends.  For example::",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/datastructures.rst",
+          "page_offset": 294,
+          "source_offset": 4164,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q07",
+      "evidence": [
+        {
+          "source_id": "tutorial-datastructures",
+          "page": 4,
+          "evidence_quote": "Curly braces or the set function can be used to create sets.  Note: to create an empty set you have to use set(), not {}; the latter creates an empty dictionary, a data structure that we discuss in the next section.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/datastructures.rst",
+          "page_offset": 1801,
+          "source_offset": 13581,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q08",
+      "evidence": [
+        {
+          "source_id": "tutorial-datastructures",
+          "page": 4,
+          "evidence_quote": "A special problem is the construction of tuples containing 0 or 1 items: the syntax has some extra quirks to accommodate these.  Empty tuples are constructed by an empty pair of parentheses; a tuple with one item is constructed by following a value with a comma (it is not sufficient to enclose a single value in parentheses). Ugly, but effective.  For example::",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/datastructures.rst",
+          "page_offset": 423,
+          "source_offset": 12203,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q09",
+      "evidence": [
+        {
+          "source_id": "tutorial-datastructures",
+          "page": 5,
+          "evidence_quote": "Performing list(d) on a dictionary returns a list of all the keys used in the dictionary, in insertion order (if you want it sorted, just use sorted(d) instead). To check whether a single key is in the dictionary, use the in keyword.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/datastructures.rst",
+          "page_offset": 695,
+          "source_offset": 16307,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q10",
+      "evidence": [
+        {
+          "source_id": "library-json",
+          "page": 2,
+          "evidence_quote": "Unlike pickle and marshal, JSON is not a framed protocol,\n      so trying to serialize multiple objects with repeated calls to\n      dump using the same *fp* will result in an invalid JSON file.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+          "page_offset": 600,
+          "source_offset": 4260,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q11",
+      "evidence": [
+        {
+          "source_id": "library-json",
+          "page": 2,
+          "evidence_quote": ":param bool ensure_ascii:\n      If True (the default), the output is guaranteed to\n      have all incoming non-ASCII characters escaped.\n      If False, these characters will be outputted as-is.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+          "page_offset": 1279,
+          "source_offset": 4939,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        },
+        {
+          "source_id": "library-json",
+          "page": 5,
+          "evidence_quote": "If *ensure_ascii* is true (the default), the output is guaranteed to\n   have all incoming non-ASCII characters escaped.  If *ensure_ascii* is\n   false, these characters will be output as-is.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+          "page_offset": 1824,
+          "source_offset": 16342,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q12",
+      "evidence": [
+        {
+          "source_id": "library-json",
+          "page": 2,
+          "evidence_quote": ":param bool allow_nan:\n      If False, serialization of out-of-range float values\n      (nan, inf, -inf) will result in a ValueError,\n      in strict compliance with the JSON specification.\n      If True (the default), their JavaScript equivalents\n      (NaN, Infinity, -Infinity) are used.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+          "page_offset": 1681,
+          "source_offset": 5341,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        },
+        {
+          "source_id": "library-json",
+          "page": 5,
+          "evidence_quote": "If *allow_nan* is true (the default), then NaN, Infinity, and\n   -Infinity will be encoded as such.  This behavior is not JSON\n   specification compliant, but is consistent with most JavaScript based\n   encoders and decoders.  Otherwise, it will be a ValueError to encode\n   such floats.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+          "page_offset": 2286,
+          "source_offset": 16804,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q13",
+      "evidence": [
+        {
+          "source_id": "library-json",
+          "page": 3,
+          "evidence_quote": ":param object_pairs_hook:\n      If set, a function that is called with the result of\n      any object literal decoded with an ordered list of pairs.\n      The return value of this function will be used\n      instead of the dict.\n      This feature can be used to implement custom decoders.\n      If *object_hook* is also set, *object_pairs_hook* takes priority.\n      Default None.\n   :type object_pairs_hook: callable | None",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+          "page_offset": 1843,
+          "source_offset": 9124,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        },
+        {
+          "source_id": "library-json",
+          "page": 4,
+          "evidence_quote": "*object_pairs_hook* is an optional function that will be called with the\n   result of every JSON object decoded with an ordered list of pairs.  The\n   return value of *object_pairs_hook* will be used instead of the\n   dict.  This feature can be used to implement custom decoders.  If\n   *object_hook* is also defined, the *object_pairs_hook* takes priority.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+          "page_offset": 2015,
+          "source_offset": 12917,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q14",
+      "evidence": [
+        {
+          "source_id": "library-json",
+          "page": 5,
+          "evidence_quote": "Method: raw_decode(s)\n\n      Decode a JSON document from *s* (a str beginning with a\n      JSON document) and return a 2-tuple of the Python representation\n      and the index in *s* where the document ended.\n\n      This can be used to decode a JSON document from a string that may have\n      extraneous data at the end.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+          "page_offset": 186,
+          "source_offset": 14704,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q15",
+      "evidence": [
+        {
+          "source_id": "library-pathlib",
+          "page": 1,
+          "evidence_quote": "#. If you want to manipulate Windows paths on a Unix machine (or vice versa).\n   You cannot instantiate a WindowsPath when running on Unix, but you\n   can instantiate PureWindowsPath.\n#. You want to make sure that your code only manipulates paths without actually\n   accessing the OS. In this case, instantiating one of the pure classes may be\n   useful since those simply don't have any OS-accessing operations.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/pathlib.rst",
+          "page_offset": 1226,
+          "source_offset": 1226,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q16",
+      "evidence": [
+        {
+          "source_id": "library-pathlib",
+          "page": 2,
+          "evidence_quote": "If a segment is an absolute path, all previous segments are ignored\n   (like os.path.join)::",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/pathlib.rst",
+          "page_offset": 50,
+          "source_offset": 3663,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        },
+        {
+          "source_id": "library-pathlib",
+          "page": 2,
+          "evidence_quote": "The slash operator helps create child paths, like os.path.join. If the argument is an absolute path, the previous path is ignored. On Windows, the drive is not reset when the argument is a rooted relative path (e.g., r'\\foo')::",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/pathlib.rst",
+          "page_offset": 2963,
+          "source_offset": 6576,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q17",
+      "evidence": [
+        {
+          "source_id": "library-pathlib",
+          "page": 2,
+          "evidence_quote": "On Windows, the drive is not reset when a rooted relative path\n   segment (e.g., r'\\foo') is encountered::",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/pathlib.rst",
+          "page_offset": 306,
+          "source_offset": 3919,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        },
+        {
+          "source_id": "library-pathlib",
+          "page": 2,
+          "evidence_quote": "The slash operator helps create child paths, like os.path.join. If the argument is an absolute path, the previous path is ignored. On Windows, the drive is not reset when the argument is a rooted relative path (e.g., r'\\foo')::",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/pathlib.rst",
+          "page_offset": 2963,
+          "source_offset": 6576,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q18",
+      "evidence": [
+        {
+          "source_id": "library-pathlib",
+          "page": 2,
+          "evidence_quote": "Spurious slashes and single dots are collapsed, but double dots ('..')\n   and leading double slashes ('//') are not, since this would change the\n   meaning of a path for various reasons (e.g. symbolic links, UNC paths)::",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/pathlib.rst",
+          "page_offset": 518,
+          "source_offset": 4131,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q19",
+      "evidence": [
+        {
+          "source_id": "library-pathlib",
+          "page": 4,
+          "evidence_quote": "Method: PurePath.as_uri()\n\n   Represent the path as a file URI.  ValueError is raised if\n   the path isn't absolute.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/pathlib.rst",
+          "page_offset": 1975,
+          "source_offset": 12905,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q20",
+      "evidence": [
+        {
+          "source_id": "library-io",
+          "page": 1,
+          "evidence_quote": "All streams are careful about the type of data you give to them.  For example giving a str object to the !write method of a binary stream will raise a TypeError.  So will giving a bytes object to the !write method of a text stream.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/io.rst",
+          "page_offset": 1256,
+          "source_offset": 1256,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q21",
+      "evidence": [
+        {
+          "source_id": "library-io",
+          "page": 2,
+          "evidence_quote": "Accordingly, it is highly recommended that you specify the encoding explicitly when opening text files. If you want to use UTF-8, pass encoding=\"utf-8\". To use the current locale encoding, encoding=\"locale\" is supported since Python 3.10.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/io.rst",
+          "page_offset": 136,
+          "source_offset": 3928,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q22",
+      "evidence": [
+        {
+          "source_id": "library-io",
+          "page": 5,
+          "evidence_quote": "Read up to *size* bytes from the object and return them.  As a convenience,\n      if *size* is unspecified or -1, all bytes until EOF are returned.\n      Otherwise, only one system call is ever made.  Fewer than *size* bytes may\n      be returned if the operating system call returns fewer than *size* bytes.\n\n      If 0 bytes are returned, and *size* was not 0, this indicates end of file.\n      If the object is in non-blocking mode and no bytes are available,\n      None is returned.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/io.rst",
+          "page_offset": 2001,
+          "source_offset": 16874,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q23",
+      "evidence": [
+        {
+          "source_id": "library-io",
+          "page": 5,
+          "evidence_quote": "Method: writelines(lines, /)\n\n      Write a list of lines to the stream.  Line separators are not added, so it\n      is usual for each of the lines provided to have a line separator at the\n      end.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/io.rst",
+          "page_offset": 1150,
+          "source_offset": 16023,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q24",
+      "evidence": [
+        {
+          "source_id": "library-stdtypes",
+          "page": 1,
+          "evidence_quote": "By default, an object is considered true unless its class defines either a object.__bool__ method that returns False or a object.__len__ method that returns zero, when called with the object. [1]_  Here are most of the built-in objects considered false:",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/stdtypes.rst",
+          "page_offset": 995,
+          "source_offset": 995,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q25",
+      "evidence": [
+        {
+          "source_id": "library-stdtypes",
+          "page": 3,
+          "evidence_quote": "(1)\n   Also referred to as integer division.  For operands of type int,\n   the result has type int.  For operands of type float,\n   the result has type float.  In general, the result is a whole\n   integer, though the result's type is not necessarily int.  The result is\n   always rounded towards minus infinity: 1//2 is 0, (-1)//2 is\n   -1, 1//(-2) is -1, and (-1)//(-2) is 0.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/stdtypes.rst",
+          "page_offset": 2156,
+          "source_offset": 9910,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q26",
+      "evidence": [
+        {
+          "source_id": "library-stdtypes",
+          "page": 4,
+          "evidence_quote": "More precisely, if x is nonzero, then x.bit_length() is the\n    unique positive integer k such that 2**(k-1) <= abs(x) < 2**k.\n    Equivalently, when abs(x) is small enough to have a correctly\n    rounded logarithm, then k = 1 + int(log(abs(x), 2)).\n    If x is zero, then x.bit_length() returns 0.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/stdtypes.rst",
+          "page_offset": 2359,
+          "source_offset": 14347,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q27",
+      "evidence": [
+        {
+          "source_id": "library-exceptions",
+          "page": 1,
+          "evidence_quote": "The expression following from must be an exception or None. It\n   will be set as !__cause__ on the raised exception. Setting\n   !__cause__ also implicitly sets the !__suppress_context__\n   attribute to True, so that using raise new_exc from None\n   effectively replaces the old exception with the new one for display\n   purposes (e.g. converting KeyError to AttributeError), while\n   leaving the old exception available in !__context__ for introspection\n   when debugging.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/exceptions.rst",
+          "page_offset": 2335,
+          "source_offset": 2335,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q28",
+      "evidence": [
+        {
+          "source_id": "library-exceptions",
+          "page": 1,
+          "evidence_quote": "The built-in exception classes can be subclassed to define new exceptions; programmers are encouraged to derive new exceptions from the Exception class or one of its subclasses, and not from BaseException.  More information on defining exceptions is available in the Python Tutorial under tut-userexceptions.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/exceptions.rst",
+          "page_offset": 1190,
+          "source_offset": 1190,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        },
+        {
+          "source_id": "tutorial-errors",
+          "page": 4,
+          "evidence_quote": "Programs may name their own exceptions by creating a new exception class (see tut-classes for more about Python classes).  Exceptions should typically be derived from the Exception class, either directly or indirectly.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/errors.rst",
+          "page_offset": 399,
+          "source_offset": 11641,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        },
+        {
+          "source_id": "library-exceptions",
+          "page": 2,
+          "evidence_quote": "Exception: Exception\n\n   All built-in, non-system-exiting exceptions are derived from this class.  All\n   user-defined exceptions should also be derived from this class.",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/exceptions.rst",
+          "page_offset": 2587,
+          "source_offset": 6221,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q29",
+      "evidence": [
+        {
+          "source_id": "library-exceptions",
+          "page": 3,
+          "evidence_quote": "Exception: EOFError\n\n   Raised when the input function hits an end-of-file condition (EOF)\n   without reading any data. (N.B.: the io.IOBase.read and\n   io.IOBase.readline methods return an empty string when they hit EOF.)",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/exceptions.rst",
+          "page_offset": 320,
+          "source_offset": 7593,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    },
+    {
+      "id": "q30",
+      "evidence": [
+        {
+          "source_id": "library-exceptions",
+          "page": 5,
+          "evidence_quote": "If a generator code directly or indirectly raises StopIteration,\n   it is converted into a RuntimeError (retaining the\n   StopIteration as the new exception's cause).",
+          "source_url": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/exceptions.rst",
+          "page_offset": 1329,
+          "source_offset": 15988,
+          "exact_quote_exists": true,
+          "filter_matches": true
+        }
+      ],
+      "answer_support_review": "AI-assisted reading of cited passages; human review pending",
+      "human_reviewed": false
+    }
+  ]
+}
